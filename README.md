@@ -3,6 +3,7 @@ Javascript SOAP Client
 
 Forked from https://github.com/gotshub/js-soap-client and modified by ranlychan.
 分叉自 https://github.com/gotshub/js-soap-client 由ranlychan修改。
+使用说明：https://github.com/SunboX/JavaScript_SOAP_Client/blob/master/README.md
 
 改进Improvements
 ------------
