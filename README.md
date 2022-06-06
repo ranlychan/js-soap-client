@@ -2,24 +2,33 @@ Javascript SOAP Client
 ======================
 
 Forked from https://github.com/gotshub/js-soap-client and modified by ranlychan.
+分叉自 https://github.com/gotshub/js-soap-client 由ranlychan修改。
 
-Improvements
+改进Improvements
 ------------
 
 * Adapted to Vue 3.0 environment with webpack
+* 适配到使用webpack的Vue 3.0环境
 * Export SOAPClientParameters, SOAPClient for importing
+* 使用export将SOAPClientParameters, SOAPClient导出以方便在其它位置使用import导入和使用
 * Fixed some prasing problem
+* 修复了一些数据解析问题
 
-Tested
+测试Tested
 ------
 
 * Tested with my own WebService
+* 使用我自行发布的WebService解析测试
 * Self defined object array has been put into use
+* WebService接口返回带有自定义的类
 * This soap client is used as a util in vue-element-admin
+* 这个soapclient.js预期在vue-element-admin模板下作为一个util工作
 
-
-Using
+使用Using
 ------
+下面是在vue-element-admin下进一步封装请求和调用的示例。
+![demo.png](https://s1.328888.xyz/2022/06/06/zuO3A.png)
+
 soap-request.js
 
 ```JavaScript
@@ -162,28 +171,8 @@ mypage.vue
           <span>{{ scope.row.dbpMin }}</span>
         </template>
       </el-table-column>
-      <!--      <el-table-column width="100px" label="Importance">-->
-      <!--        <template slot-scope="scope">-->
-      <!--          <svg-icon v-for="n in +scope.row.importance" :key="n" icon-class="star" class="meta-item__icon" />-->
-      <!--        </template>-->
-      <!--      </el-table-column>-->
-
-      <!--      <el-table-column min-width="300px" label="Title">-->
-      <!--        <template slot-scope="{row}">-->
-      <!--          <router-link :to="'/example/edit/'+row.id" class="link-type">-->
-      <!--            <span>{{ row.title }}</span>-->
-      <!--          </router-link>-->
-      <!--        </template>-->
-      <!--      </el-table-column>-->
-
+      
       <el-table-column align="center" label="操作" width="120">
-        <!--        <template slot-scope="scope">-->
-        <!--          <router-link :to="'/patient/detail/'+scope.row.bpId">-->
-        <!--            <el-button type="primary" size="small" icon="el-icon-edit">-->
-        <!--              详情-->
-        <!--            </el-button>-->
-        <!--          </router-link>-->
-        <!--        </template>-->
         <template slot-scope="scope">
           <el-button type="primary" size="small" icon="el-icon-delete" v-on:click="deleteBp">
             删除
