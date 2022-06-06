@@ -1,25 +1,18 @@
 Javascript SOAP Client
 ======================
 
-Forked from http://javascriptsoapclient.codeplex.com/ and modified by gtathub.
+Forked from [http://javascriptsoapclient.codeplex.com/](https://github.com/gotshub/js-soap-client) and modified by ranlychan.
 
 Improvements
 ------------
 
-* Parsing exceptions fixed
-* Arrays as parameters correctly sets the length attribute in the type definiton
-* Arrays are also parsed out of responses if they aren't listed in the wsdl
-* Understands responses from php webservice (for example Magento)
-* IE9 compatible
+* Adapted to Vue 3.0 environment with webpack
+* Export SOAPClientParameters, SOAPClient for importing
+* Fixed some prasing problem
 
 Tested
 ------
 
-* Magento Webservice (PHP online store system)
-
-Please leave me a note if you have tested other webservices or found bugs.
-New versions available at: https://github.com/gtathub/js-soap-client
-
-* Original work by Matteo Casati (based on v2.4 from 2007-12-21)
-* Improved by Gordon Tschirner ([gtathub](https://github.com/gtathub))
-* Licensed under GPLv2: https://github.com/gtathub/js-soap-client.git
+* Tested with my own WebService
+* Self defined object array has been put into use
+* This soap client is used as a util in vue-element-admin
