@@ -29,8 +29,7 @@ Forked from https://github.com/gotshub/js-soap-client and modified by ranlychan.
 下面是在vue-element-admin下进一步封装请求和调用的示例。
 参考：https://panjiachen.github.io/vue-element-admin-site/zh/guide/
 
-
-![demo.png](https://s1.328888.xyz/2022/06/06/zuO3A.png)
+![demo.png](https://s1.328888.xyz/2022/06/06/zu6uW.png)
 
 soap-request.js
 
