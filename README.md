@@ -31,7 +31,7 @@ Forked from https://github.com/gotshub/js-soap-client and modified by ranlychan.
 
 ![demo.png](https://s1.328888.xyz/2022/06/06/zu6uW.png)
 
-soap-request.js
+src/utils/soap-request.js
 
 ```JavaScript
 import { SOAPClientParameters, SOAPClient } from '@/utils/soapclient'
@@ -72,7 +72,7 @@ export function requestSOAP(paramsKV) {
 
 ```
 
-my-api.js
+src/api/my-api.js
 
 ```JavaScript
 import { requestSOAP } from '@/utils/soap-request'
@@ -107,7 +107,7 @@ export function deleteBloodPressure(query, callback) {
 }
 ```
 
-mypage.vue
+src/views/patient/mypage.vue
 ```JavaScript
 <template>
   <div class="app-container">
