@@ -1,7 +1,7 @@
 Javascript SOAP Client
 ======================
 
-Forked from [[](https://github.com/gotshub/js-soap-client)](https://github.com/gotshub/js-soap-client) and modified by ranlychan.
+Forked from https://github.com/gotshub/js-soap-client and modified by ranlychan.
 
 Improvements
 ------------
