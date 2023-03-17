@@ -8,7 +8,14 @@ Forked from https://github.com/gotshub/js-soap-client and modified by ranlychan.
 
 如果你不使用Vue，请只参照这个说明：https://github.com/SunboX/JavaScript_SOAP_Client/blob/master/README.md
 
-改进Improvements
+功能
+------------
+* Allow sending and resolving SOAP request in JavaScript
+* 封装了在JavaScript的进行SOAP请求和数据解析的操作
+* Specially adapted to Vue 3.0
+* 适用于Vue 3.0
+
+改进Improvement
 ------------
 
 * Adapted to Vue 3.0 environment with webpack
@@ -18,7 +25,7 @@ Forked from https://github.com/gotshub/js-soap-client and modified by ranlychan.
 * Fixed some prasing problem
 * 修复了一些数据解析问题
 
-测试Tested
+测试Test
 ------
 
 * Tested with my own WebService
@@ -28,14 +35,14 @@ Forked from https://github.com/gotshub/js-soap-client and modified by ranlychan.
 * This soap client is used as a util in vue-element-admin
 * 这个soapclient.js预期在vue-element-admin模板下作为一个util工作
 
-使用Using
+使用Usage
 ------
 下面是在vue-element-admin下进一步封装请求和调用的示例。
 
 
 参考：https://panjiachen.github.io/vue-element-admin-site/zh/guide/
 
-![demo.png](https://s1.328888.xyz/2022/06/06/zu6uW.png)
+![demo.png](https://s2.loli.net/2023/03/17/Qb7XSsxlmiu2Kty.png)
 
 src/utils/soap-request.js
 
